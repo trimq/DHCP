@@ -6,12 +6,12 @@
 ####[2.Mô hình hoạt động của DHCP](#tacdung)
 ####[3.Các loại bản tin DHCP](#bantin)
 <ul>
-<li>[DHCP discover](#discover)</li>
-<li>[DHCP offer](#offer)</li>
-<li>[DHCP request](#request)</li>
-<li>[DHCP ACK/Nack](#ack)</li>
-<li>[DHCP decline](#decline)</li>
-<li>[DHCP release](#release)</li>
+[DHCP discover](#discover)
+[DHCP offer](#offer)
+[DHCP request](#request)
+[DHCP ACK/Nack](#ack)
+[DHCP decline](#decline)
+[DHCP release](#release)
 </ul>
 ####[4.DHCP header](#header)
 ####[5.Cách thức hoạt động](#hoatdong)
@@ -36,14 +36,17 @@ Giao thức DHCP (Dynamic host configuration protocol) là 1 giao thức cấu h
 
 <a name="bantin"></a>
 ####3.Các loại bản tin DHCP:
-*DHCP discover: Khi 1 client muốn gia nhập mạng, nó sẽ broadcast 1 gói tin dhcp discover tới dhcp server để yêu cầu cấp thông tin địa chỉ ip. Ip nguồn trong gói là 0.0.0.0.
-*DHCP offer: Unicast từ DHCP server sau khi nhận được gói Discover của client. Gói tin bao gồm thông tin IP đề nghị cấp cho client như: IP address, Subnet Mask, Gateway...Có thể sẽ có nhiều DHCP server cùng gửi gói tin này, Client sẽ nhận và xử lý gói Offer đến trước.
-*DHCP request: Broadcast từ client khi nhận được gói DHCP Offer. Nội dung gói tin: xác nhận thông tin IP sẽ nhận từ server để cho các server khác không gửi gói tin offer cho clien đấy nữa.
-*DHCP ACK/Nack:
-	*DHCP Ack: Unicast bởi DHCP server đến DHCP client xác nhận thông tin từ gói DHCP Request. Tất cả thông tin cấu hình IP sẽ được gửi đến cho client và kết thúc quá trình cấp phát IP.
-	*DHCP Nack: Unicast từ server, khi server từ chối gói DHCP Request.
-*DHCP decline: Broadcast từ client nếu client từ chối IP đã được cấp.
-*DHCP release: Được gửi bởi DHCP client khi client bỏ địa chỉ IP và hủy thời gian sử dụng còn lại. Đây là gói tin unicast gửi trực tiếp đến DHCP server cung cấp IP đó.
+<ul>
+<li>**DHCP discover**: Khi 1 client muốn gia nhập mạng, nó sẽ broadcast 1 gói tin dhcp discover tới dhcp server để yêu cầu cấp thông tin địa chỉ ip. Ip nguồn trong gói là 0.0.0.0.</li>
+<li>**DHCP offer**: Unicast từ DHCP server sau khi nhận được gói Discover của client. Gói tin bao gồm thông tin IP đề nghị cấp cho client như: IP address, Subnet Mask, Gateway...Có thể sẽ có nhiều DHCP server cùng gửi gói tin này, Client sẽ nhận và xử lý gói Offer đến trước.</li>
+<li>**DHCP request**: Broadcast từ client khi nhận được gói DHCP Offer. Nội dung gói tin: xác nhận thông tin IP sẽ nhận từ server để cho các server khác không gửi gói tin offer cho clien đấy nữa.</li>
+<li>**DHCP ACK/Nack**:</li>
+<ul>
+	<li>**DHCP Ack**: Unicast bởi DHCP server đến DHCP client xác nhận thông tin từ gói DHCP Request. Tất cả thông tin cấu hình IP sẽ được gửi đến cho client và kết thúc quá trình cấp phát IP.</li>
+	<li>**DHCP Nack**: Unicast từ server, khi server từ chối gói DHCP Request.</li>
+</ul>
+<li>**DHCP decline**: Broadcast từ client nếu client từ chối IP đã được cấp.</li>
+<li>**DHCP release**: Được gửi bởi DHCP client khi client bỏ địa chỉ IP và hủy thời gian sử dụng còn lại. Đây là gói tin unicast gửi trực tiếp đến DHCP server cung cấp IP đó.</li>
 
 <a name="header"></a>
 ####4.DHCP header:
