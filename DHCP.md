@@ -35,6 +35,8 @@ Giao thức DHCP (Dynamic host configuration protocol) là 1 giao thức cấu h
 
 <a name="bantin"></a>
 ####3.Các loại bản tin DHCP:
+
+<a name="discover"></a>
 <li>**DHCP discover**: Khi 1 client muốn gia nhập mạng, nó sẽ broadcast 1 gói tin dhcp discover tới dhcp server để yêu cầu cấp thông tin địa chỉ ip. Ip nguồn trong gói là 0.0.0.0.</li>
 <li>**DHCP offer**: Unicast từ DHCP server sau khi nhận được gói Discover của client. Gói tin bao gồm thông tin IP đề nghị cấp cho client như: IP address, Subnet Mask, Gateway...Có thể sẽ có nhiều DHCP server cùng gửi gói tin này, Client sẽ nhận và xử lý gói Offer đến trước.</li>
 <li>**DHCP request**: Broadcast từ client khi nhận được gói DHCP Offer. Nội dung gói tin: xác nhận thông tin IP sẽ nhận từ server để cho các server khác không gửi gói tin offer cho clien đấy nữa.</li>
