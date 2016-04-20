@@ -5,7 +5,6 @@
 ####[1.Khái niệm](#khainiem)
 ####[2.Mô hình hoạt động của DHCP](#tacdung)
 ####[3.Các loại bản tin DHCP](#bantin)
-<ul>
 <li>[DHCP discover](#discover)</li>
 [DHCP offer](#offer)
 [DHCP request](#request)
