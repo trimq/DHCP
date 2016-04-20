@@ -22,8 +22,10 @@ Giao thức DHCP (Dynamic host configuration protocol) là 1 giao thức cấu h
  <a name="tacdung"></a>
 ####2.Mô hình hoạt động của DHCP:
 #####Mô hình client-server:
+<ul>
 	<li>DHCP server: cấp tự động địa chỉ IP cho máy client.</li>
 	<li>DHCP client: Yêu cầu server cấp phát địa chỉ IP.</li>
+</ul>
 #####Các cơ chế cấp:
 <ul>
 	<li>Cấp tự động: Gán 1 địa chỉ IP thường trực cho client.</li>
