@@ -5,12 +5,14 @@
 ####[1.Khái niệm](#khainiem)
 ####[2.Mô hình hoạt động của DHCP](#tacdung)
 ####[3.Các loại bản tin DHCP](#bantin)
--[DHCP discover](#discover)
--[DHCP offer](#offer)
--[DHCP request](#request)
--[DHCP ACK/Nack](#ack)
--[DHCP decline](#decline)
--[DHCP release](#release)
+<ul>
+<li>[DHCP discover](#discover)</li>
+<li>[DHCP offer](#offer)</li>
+<li>[DHCP request](#request)</li>
+<li>[DHCP ACK/Nack](#ack)</li>
+<li>[DHCP decline](#decline)</li>
+<li>[DHCP release](#release)</li>
+</ul>
 ####[4.DHCP header](#header)
 ####[5.Cách thức hoạt động](#hoatdong)
 
@@ -20,13 +22,17 @@ Giao thức DHCP (Dynamic host configuration protocol) là 1 giao thức cấu h
 
  <a name="tacdung"></a>
 ####2.Mô hình hoạt động của DHCP:
-*Mô hình client-server:
-	*DHCP server: cấp tự động địa chỉ IP cho máy client.
-	*DHCP client: Yêu cầu server cấp phát địa chỉ IP.
-*Các cơ chế cấp:
-	*Cấp tự động: Gán 1 địa chỉ IP thường trực cho client.
-	*Cấp động: Gán địa chỉ IP trong 1 khoảng thời gian hữu hạn.
-	*Cấp thủ công: Địa chỉ IP sẽ được gán bởi người quản trị, chỉ đưa địa chỉ này đến máy client.
+#####Mô hình client-server:
+<ul>
+	<li>DHCP server: cấp tự động địa chỉ IP cho máy client.</li>
+	<li>DHCP client: Yêu cầu server cấp phát địa chỉ IP.</li>
+</ul>
+#####Các cơ chế cấp:
+<ul>
+	<li>Cấp tự động: Gán 1 địa chỉ IP thường trực cho client.</li>
+	<li>Cấp động: Gán địa chỉ IP trong 1 khoảng thời gian hữu hạn.</li>
+	<li>Cấp thủ công: Địa chỉ IP sẽ được gán bởi người quản trị, chỉ đưa địa chỉ này đến máy client.</li>
+</ul>
 
 <a name="bantin"></a>
 ####3.Các loại bản tin DHCP:
